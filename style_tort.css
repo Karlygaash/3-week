@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 758px;
+    margin: 0 auto;
+}
+.block{
+    width: 32%;
+    /* margin: 15px; */
+    border: 1px solid #BFC9CA ;
+    border-radius: 20px;
+    height: 560px;
+    position: relative;
+}
+
+.image{
+    height: 300px;
+    /* width: 300px; */
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.title{
+    margin-left: 10px;
+}
+h2{
+    color:dodgerblue;
+    font-weight: 700;
+}
+
+p{
+    margin-left: 10px;
+    color: dimgray;
+    font-weight: 500;
+}
+
+.grade{
+    display: flex;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 13px;
+    width: 13px;
+    align-items: center;
+}
+
+.prices{
+    color: dimgray;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    align-items: end;
+}
+
+.price{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media (max-width:380px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 800px
+    }
+    .block{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:765px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .block{
+        width: 48%;
+        margin-bottom: 15px;
+    }
+}
